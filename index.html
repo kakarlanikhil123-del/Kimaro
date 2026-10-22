@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Kimaro – professional webcam (demo)</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="top">
+      <a class="logo" href="#top">◆ Kimaro</a>
+      <button class="burger" id="burger" aria-label="Menu">☰</button>
+      <nav id="menu">
+        <a href="#customize">Customize</a><a href="#focus">Features</a><a href="#specs">Specs</a
+        ><a href="#captures">Captures</a><button class="btn" id="preorderTop">Preorder</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <small class="badge">Professional webcam</small>
+        <h1>Kimaro<span>.</span></h1>
+        <div class="stage">
+          <div class="cam" id="cam">
+            <div class="lens"><i></i></div>
+          </div>
+        </div>
+        <div class="buy">
+          <button class="btn lime" id="buyNow">BUY NOW</button><b id="price">$250</b
+          ><small>Fictional product · sample price</small>
+        </div>
+      </section>
+
+      <section id="customize" class="custom">
+        <div>
+          <small class="badge">Online editor</small>
+          <h2>Customize your camera</h2>
+          <p>Pick a finish and lens ring. The preview above updates instantly.</p>
+        </div>
+        <div class="panel">
+          <b>Finish</b>
+          <div class="swatches" id="finishes"></div>
+          <b>Lens ring</b>
+          <div class="swatches" id="rings"></div>
+          <p class="sum" id="summary"></p>
+        </div>
+      </section>
+
+      <section id="focus">
+        <h2>Smoothest focus</h2>
+        <div class="tabs" id="tabs" role="tablist"></div>
+        <div class="slide" id="slide"></div>
+      </section>
+
+      <section id="specs">
+        <h2>Specs</h2>
+        <ul class="specs" id="specList"></ul>
+      </section>
+
+      <section id="captures">
+        <h2>Captured with Kimaro</h2>
+        <p class="hint">Upload your own sample shots (JPG, PNG, WebP).</p>
+        <div id="gallery"></div>
+      </section>
+
+      <section class="news">
+        <h2>Try innovative Kimaro</h2>
+        <form id="newsForm" novalidate>
+          <input
+            id="newsEmail"
+            type="email"
+            placeholder="Email for launch updates"
+            aria-label="Email"
+          /><button class="btn lime">Notify me</button>
+        </form>
+        <small id="newsOut" role="status"></small>
+      </section>
+    </main>
+    <footer>Kimaro · fictional brand for a demonstration project · kimarocam.example</footer>
+    <script src="app.js"></script>
+  </body>
+</html>
